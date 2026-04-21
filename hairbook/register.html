@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registracija - HairBook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="form-box">
+      <h2>Registracija</h2>
+      <form id="registerForm">
+        <input type="text" id="fullName" placeholder="Ime i prezime" required>
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Lozinka" required>
+        <button type="submit" class="btn">Registruj se</button>
+      </form>
+      <p>Već imaš račun? <a href="login.html">Prijavi se</a></p>
+    </div>
+  </main>
+
+  <script type="module" src="firebase.js"></script>
+</body>
+</html>

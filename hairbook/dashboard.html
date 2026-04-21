@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - HairBook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="hero">
+      <h2>Dostupne usluge</h2>
+      <div id="servicesList"></div>
+    </div>
+
+    <div class="form-box">
+      <h2>Rezerviši termin</h2>
+      <form id="appointmentForm">
+        <select id="service_id" required>
+          <option value="">Odaberi uslugu</option>
+        </select>
+
+        <input type="date" id="appointment_date" required>
+        <input type="time" id="appointment_time" required>
+
+        <button type="submit" class="btn">Rezerviši</button>
+      </form>
+    </div>
+<div class="hero">
+  <h2>Moji termini</h2>
+  <div id="appointmentsList"></div>
+</div>
+  </main>
+
+<script type="module" src="firebase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
